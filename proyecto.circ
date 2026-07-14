@@ -3,6 +3,40 @@
   This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit2" val="0"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit3" val="0"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="incoming" val="32"/>
+    </tool>
     <tool name="Pin">
       <a name="appearance" val="classic"/>
     </tool>
@@ -61,6 +95,7 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="Registro_32_bits"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="clabelup" val="north"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(180,260)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -114,6 +149,263 @@
     <a name="circuit" val="Data_Path"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(180,20)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Entrada_Bus_C"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(190,320)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Entrada_MBR"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(530,200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Enable_MDR"/>
+      <a name="labelfont" val="SansSerif bold 9"/>
+    </comp>
+    <comp lib="0" loc="(530,300)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Enable_PC"/>
+      <a name="labelfont" val="SansSerif bold 9"/>
+    </comp>
+    <comp lib="0" loc="(530,350)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Enable_MBR_Signo"/>
+      <a name="labelfont" val="SansSerif bold 9"/>
+    </comp>
+    <comp lib="0" loc="(530,400)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Enable_MBRU"/>
+      <a name="labelfont" val="SansSerif bold 9"/>
+    </comp>
+    <comp lib="0" loc="(530,500)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Enable_SP"/>
+      <a name="labelfont" val="SansSerif bold 9"/>
+    </comp>
+    <comp lib="0" loc="(530,600)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Enable_LV"/>
+      <a name="labelfont" val="SansSerif bold 9"/>
+    </comp>
+    <comp lib="0" loc="(530,700)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Enable_CPP"/>
+      <a name="labelfont" val="SansSerif bold 9"/>
+    </comp>
+    <comp lib="0" loc="(530,800)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Enable_TOS"/>
+      <a name="labelfont" val="SansSerif bold 9"/>
+    </comp>
+    <comp lib="0" loc="(530,900)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Enable_OPC"/>
+      <a name="labelfont" val="SansSerif bold 9"/>
+    </comp>
+    <comp lib="0" loc="(570,860)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="Bus_B"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(580,20)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Salida_MAR"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(590,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Salida_MDR_Memoria"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(600,220)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Salida_PC_Memoria"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(680,990)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Salida_H"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="1" loc="(560,120)" name="Controlled Buffer">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="1" loc="(560,220)" name="Controlled Buffer">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="1" loc="(560,320)" name="Controlled Buffer">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="1" loc="(560,360)" name="Controlled Buffer">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="1" loc="(560,420)" name="Controlled Buffer">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="1" loc="(560,520)" name="Controlled Buffer">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="1" loc="(560,620)" name="Controlled Buffer">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="1" loc="(560,720)" name="Controlled Buffer">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="1" loc="(560,820)" name="Controlled Buffer">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="8" loc="(1051,428)" name="Text">
+      <a name="text" val="BORRAR TODOS LOS TEXTOS EN NEGRO QUE PUSE CUANDO TERMINEN, LOS PUSE PARA QUE SE GUIEN"/>
+    </comp>
+    <comp lib="8" loc="(122,62)" name="Text">
+      <a name="font" val="SansSerif bold 10"/>
+      <a name="text" val="Conectar Entrada_Bus_C a la salida del Shifter"/>
+    </comp>
+    <comp lib="8" loc="(765,840)" name="Text">
+      <a name="text" val="Puntos de conexion"/>
+    </comp>
+    <comp lib="8" loc="(775,885)" name="Text">
+      <a name="text" val="Conectar Bus B a la entrada B de la ALU"/>
+    </comp>
+    <comp lib="8" loc="(833,965)" name="Text">
+      <a name="text" val="Conectar Salida_H a la entrada A de la ALU"/>
+    </comp>
+    <comp lib="8" loc="(901,292)" name="Text">
+      <a name="text" val="Salidas MAR/MDR/PC: Conectar a los puertos de la memoria principal."/>
+    </comp>
+    <comp loc="(490,120)" name="Registro_32_bits">
+      <a name="label" val="MDR"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(490,20)" name="Registro_32_bits">
+      <a name="label" val="MAR"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(490,220)" name="Registro_32_bits">
+      <a name="label" val="PC"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(490,320)" name="MBR"/>
+    <comp loc="(490,420)" name="Registro_32_bits">
+      <a name="label" val="SP"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(490,520)" name="Registro_32_bits">
+      <a name="label" val="LV"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(490,620)" name="Registro_32_bits">
+      <a name="label" val="CPP"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(490,720)" name="Registro_32_bits">
+      <a name="label" val="TOS"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(490,820)" name="Registro_32_bits">
+      <a name="label" val="OPC"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(490,920)" name="Registro_32_bits">
+      <a name="label" val="H"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <wire from="(180,20)" to="(240,20)"/>
+    <wire from="(190,320)" to="(270,320)"/>
+    <wire from="(240,120)" to="(240,220)"/>
+    <wire from="(240,120)" to="(270,120)"/>
+    <wire from="(240,20)" to="(240,120)"/>
+    <wire from="(240,20)" to="(270,20)"/>
+    <wire from="(240,220)" to="(240,420)"/>
+    <wire from="(240,220)" to="(270,220)"/>
+    <wire from="(240,420)" to="(240,520)"/>
+    <wire from="(240,420)" to="(270,420)"/>
+    <wire from="(240,520)" to="(240,620)"/>
+    <wire from="(240,520)" to="(270,520)"/>
+    <wire from="(240,620)" to="(240,720)"/>
+    <wire from="(240,620)" to="(270,620)"/>
+    <wire from="(240,720)" to="(240,820)"/>
+    <wire from="(240,720)" to="(270,720)"/>
+    <wire from="(240,820)" to="(240,920)"/>
+    <wire from="(240,820)" to="(270,820)"/>
+    <wire from="(240,920)" to="(270,920)"/>
+    <wire from="(490,120)" to="(540,120)"/>
+    <wire from="(490,20)" to="(580,20)"/>
+    <wire from="(490,220)" to="(540,220)"/>
+    <wire from="(490,320)" to="(540,320)"/>
+    <wire from="(490,340)" to="(490,360)"/>
+    <wire from="(490,360)" to="(540,360)"/>
+    <wire from="(490,420)" to="(540,420)"/>
+    <wire from="(490,520)" to="(540,520)"/>
+    <wire from="(490,620)" to="(540,620)"/>
+    <wire from="(490,720)" to="(540,720)"/>
+    <wire from="(490,820)" to="(540,820)"/>
+    <wire from="(490,920)" to="(530,920)"/>
+    <wire from="(530,200)" to="(550,200)"/>
+    <wire from="(530,300)" to="(550,300)"/>
+    <wire from="(530,350)" to="(550,350)"/>
+    <wire from="(530,400)" to="(550,400)"/>
+    <wire from="(530,500)" to="(550,500)"/>
+    <wire from="(530,600)" to="(550,600)"/>
+    <wire from="(530,700)" to="(550,700)"/>
+    <wire from="(530,800)" to="(550,800)"/>
+    <wire from="(530,900)" to="(550,900)"/>
+    <wire from="(530,920)" to="(530,990)"/>
+    <wire from="(530,990)" to="(680,990)"/>
+    <wire from="(550,130)" to="(550,200)"/>
+    <wire from="(550,230)" to="(550,300)"/>
+    <wire from="(550,330)" to="(550,350)"/>
+    <wire from="(550,370)" to="(550,400)"/>
+    <wire from="(550,430)" to="(550,500)"/>
+    <wire from="(550,530)" to="(550,600)"/>
+    <wire from="(550,630)" to="(550,700)"/>
+    <wire from="(550,730)" to="(550,800)"/>
+    <wire from="(550,830)" to="(550,900)"/>
+    <wire from="(560,120)" to="(570,120)"/>
+    <wire from="(560,220)" to="(570,220)"/>
+    <wire from="(560,320)" to="(570,320)"/>
+    <wire from="(560,360)" to="(570,360)"/>
+    <wire from="(560,420)" to="(570,420)"/>
+    <wire from="(560,520)" to="(570,520)"/>
+    <wire from="(560,620)" to="(570,620)"/>
+    <wire from="(560,720)" to="(570,720)"/>
+    <wire from="(560,820)" to="(570,820)"/>
+    <wire from="(570,120)" to="(570,220)"/>
+    <wire from="(570,120)" to="(590,120)"/>
+    <wire from="(570,220)" to="(570,320)"/>
+    <wire from="(570,220)" to="(600,220)"/>
+    <wire from="(570,320)" to="(570,360)"/>
+    <wire from="(570,360)" to="(570,420)"/>
+    <wire from="(570,420)" to="(570,520)"/>
+    <wire from="(570,520)" to="(570,620)"/>
+    <wire from="(570,620)" to="(570,720)"/>
+    <wire from="(570,720)" to="(570,820)"/>
+    <wire from="(570,820)" to="(570,860)"/>
   </circuit>
   <circuit name="Registro_8_bits">
     <a name="appearance" val="logisim_evolution"/>
@@ -171,22 +463,94 @@
     <a name="circuit" val="MBR"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(280,180)" name="Pin">
+    <comp lib="0" loc="(280,460)" name="Constant">
+      <a name="value" val="0x0"/>
+      <a name="width" val="24"/>
+    </comp>
+    <comp lib="0" loc="(310,390)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="LOAD_MBR"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
-    <comp lib="0" loc="(350,140)" name="Pin">
+    <comp lib="0" loc="(310,410)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(380,370)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Entrada_Memoria"/>
       <a name="labelfont" val="SansSerif bold 11"/>
       <a name="width" val="8"/>
     </comp>
-    <comp loc="(680,150)" name="Registro_8_bits"/>
-    <wire from="(280,180)" to="(290,180)"/>
-    <wire from="(290,170)" to="(290,180)"/>
-    <wire from="(290,170)" to="(460,170)"/>
-    <wire from="(350,140)" to="(360,140)"/>
-    <wire from="(360,140)" to="(360,150)"/>
+    <comp lib="0" loc="(780,360)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit10" val="1"/>
+      <a name="bit11" val="1"/>
+      <a name="bit12" val="1"/>
+      <a name="bit13" val="1"/>
+      <a name="bit14" val="1"/>
+      <a name="bit15" val="1"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit2" val="0"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit3" val="0"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="1"/>
+      <a name="bit9" val="1"/>
+      <a name="facing" val="west"/>
+      <a name="incoming" val="32"/>
+    </comp>
+    <comp lib="0" loc="(810,260)" name="Bit Extender">
+      <a name="out_width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(890,260)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Salida_MBR_Signo"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(890,360)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Salida_MBRU"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp loc="(710,370)" name="Registro_8_bits"/>
+    <wire from="(280,460)" to="(720,460)"/>
+    <wire from="(310,390)" to="(490,390)"/>
+    <wire from="(310,410)" to="(490,410)"/>
+    <wire from="(380,370)" to="(490,370)"/>
+    <wire from="(710,370)" to="(730,370)"/>
+    <wire from="(720,380)" to="(720,460)"/>
+    <wire from="(720,380)" to="(760,380)"/>
+    <wire from="(730,260)" to="(730,370)"/>
+    <wire from="(730,260)" to="(770,260)"/>
+    <wire from="(730,370)" to="(760,370)"/>
+    <wire from="(780,360)" to="(890,360)"/>
+    <wire from="(810,260)" to="(890,260)"/>
   </circuit>
 </project>
